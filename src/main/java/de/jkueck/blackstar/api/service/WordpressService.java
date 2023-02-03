@@ -290,7 +290,7 @@ public class WordpressService {
     }
 
     private String getBase64AuthHeader() {
-        String auth = "j.kueck" + ":" + "9bQU GzAe FHVE CWyY JmDx N4Jp";
+        String auth = "";
         byte[] encodedAuth = Base64.encodeBase64(auth.getBytes(StandardCharsets.US_ASCII));
         return "Basic " + new String(encodedAuth);
     }
